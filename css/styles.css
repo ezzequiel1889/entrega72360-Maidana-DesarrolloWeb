@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+}
+
+body{
+    font-family: "PT Sans", sans-serif;
+    margin: auto;
+    height: 100vh;
+    width: 100wh;
+    background-color: rgba(0, 0, 0, 0.959);
+}
+
+
+/* HEADER */
+header{
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    box-shadow: 10px 10px 20px black;
+    background-color: #4d8076;
+}
+
+
+.container-head{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+
+.imagen-logo img {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.nav-bar{ 
+    width: 370px;
+    height: 30px;
+
+}
+
+.nav-bar ul{ 
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+.nav-bar ul li:hover{ 
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.801);
+}
+
+/* MAIN */
+main{
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    border-radius: 25px;
+    background-color: #2f564dcd   ;
+}
+
+.cuerpo-pag{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    margin-top: 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    
+}
+
+.imagen{
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 4px solid black;
+    background-position: center;
+    
+}
+.text-main{
+    margin-bottom: 40px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.533);
+}
+.text-main p{
+    padding: 15px;
+    color: #4D8076;
+    transition: color 0.5s;
+}
+
+.text-main p:hover{
+    color: white;
+}
+.parrafos{ 
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4D8076;
+    height: 100px;
+    margin-top: 20px;
+    box-shadow: 100px 100px 100px 110px black;
+}
+.titulo{
+    border-radius: 35px;
+    border: 1px solid black;
+    transition: background-color 0.5s;
+}
+.titulo:hover{
+    background-color: rgba(0, 0, 0, 0.587);
+}
+.titulo h3{
+    padding: 10px;
+    cursor: pointer;
+    transition: color 1s;
+}
+.titulo h3:hover{
+    color: white;
+}
+.social-foot ul{
+    font-size: 25px;
+    gap: 40px;
+    display: flex;
+    list-style: none;
+} 
+.social-foot ul li{
+    border-radius: 100%;
+    padding: 5px 8px;
+    transition: background-color 0.5s;
+}     
+.social-foot ul li:hover{
+    background-color: rgba(255, 255, 255, 0.637);
+}    
+
+
+/********** TIENDA *********/
+.titulo-sect1 h2{
+    text-align: center;
+}
+.cuerpo-tienda{
+    padding: 0px 15px;
+    margin-top: 85px 10px 10px 10px;
+}
+#ul_1{
+    border-radius: 10px;
+    padding: 3px;
+    background-color: rgba(240, 248, 255, 0.336);
+}
+.cont-divs{
+    display: grid;
+    height: 96vh;
+    gap: 20px;
+    /* Se le pone ciertas columnas y filas en base a lo que queramos ordenar y como */
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    /* Se le dice que filas y columnas ocupa cada contenedor */
+    grid-template-areas: 
+    'cont1 cont1 cont1'
+    'cont2 . cont3';
+}
+/* Para usar el templateArea se le tiene que indicar a cada contenedor un nombre */
+.img-cont1{
+    place-content: center;
+    text-align: center;
+    grid-area: cont1;
+}
+#img1{
+    border-radius: 15%;
+    border: 5px solid black;
+    width: 40%;
+        
+}
+.img-cont2{
+    background-color: rgba(56, 56, 56, 0.87);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    border-radius: 15%;
+    border: 5px solid black;
+    grid-area: cont2;
+    text-align: center;
+
+    p{
+        background-color: #2f564d93;
+        border-radius: 8px;
+        width: 80%;
+        color: rgba(255, 255, 255, 0.774);
+    }
+}
+#img2{
+    border-radius: 15%;
+    width: 70%;
+    border: 2px solid black;
+    transition: transform 0.8s;
+}
+#img2:hover{
+    transform: scale(1.2);
+}
+.img-cont3{
+    background-color: rgba(56, 56, 56, 0.87);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    border-radius: 15%;
+    border: 5px solid black;
+    grid-area: cont3;
+    text-align: center;
+    
+    p{
+        background-color: #2f564d93;
+        border-radius: 10px;
+        width: 80%;
+        color: rgba(255, 255, 255, 0.774);
+    }
+}
+
+#img3{
+    border-radius: 15%;
+    width: 70%;
+    height: 55%;
+    border: 2px solid black;
+    transition: transform 0.8s;
+
+}
+#img3:hover{
+    transform: scale(1.2);
+}
+/********** ACCESORIOS *********/
+.sect_accesorios{
+    margin-top: 85px;
+}
+#ul_2{
+    border-radius: 10px;
+    padding: 3px;
+    background-color: rgba(240, 248, 255, 0.336);
+}
+
+/********** OFERTAS *********/
+.sect-ofertas{
+    margin-top: 85px;
+}
+#ul_3{
+    border-radius: 10px;
+    padding: 3px;
+    background-color: rgba(240, 248, 255, 0.336);
+}
+.cont-cajas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    place-items: center;
+}
+.cont-cajas > div{
+    border: 1px solid black;
+}
+
+.caja1{
+    width: 55%;
+    height: 53%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        position: absolute;
+        width: 20%;
+
+    }
+    .cont-texto1{
+        p{
+            color: green;
+            border: 1px solid black;
+            background-color: #4d8076;
+            font-size: 35px;
+        }
+        position: relative;
+    }
+}
+.caja2{
+    overflow: hidden;
+    width: 55%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 20%;
+        position: absolute;
+    }
+    .cont-texto2{
+        p{
+            color: green;
+            border: 1px solid black;
+            background-color: #4d8076;
+            font-size: 35px;
+        }
+        position: relative;
+    }
+}
+.caja3{
+    width: 60%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 20%;
+        position: absolute;
+    }
+    p{
+        color: green;
+        border: 1px solid black;
+        background-color: #4d8076;
+        font-size: 35px;
+        position: relative;
+    }
+}
+.caja4{
+    overflow: hidden;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 20%;
+        height: 22%;
+        position: absolute;
+    }
+    p{
+        color: green;
+        border: 1px solid black;
+        background-color: #4d8076;
+        font-size: 35px;
+        position: relative;
+    }
+}
+/********** NOSOTROS *********/
+.sect-nosotros{
+    margin-top: 85px;
+}
+#ul_4{
+    border-radius: 10px;
+    padding: 3px;
+    background-color: rgba(240, 248, 255, 0.336);
+}
+
+/********** CONTACTO *********/
+.sect_contacto{
+    margin-top: 85px;
+}
+#ul_5{
+    border-radius: 10px;
+    padding: 3px;
+    background-color: rgba(240, 248, 255, 0.336);
+}

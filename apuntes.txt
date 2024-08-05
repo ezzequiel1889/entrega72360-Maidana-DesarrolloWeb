@@ -1,0 +1,8 @@
+FLEXBOX
+    - Trabaja siempre en una sola dimension
+    - Se complementa con GRID
+GRID
+    - Trabaja en 2D
+    - Trabaja en grillas
+
+/* uso de grid area */
