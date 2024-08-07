@@ -1,18 +1,22 @@
 *{
+    font-family: "Merriweather", serif;;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: black;
-    text-decoration: none;
+    
 }
 
 body{
-    font-family: "PT Sans", sans-serif;
     margin: auto;
     height: 100vh;
     width: 100wh;
     background-color: rgba(0, 0, 0, 0.959);
-
+    a{
+        color: black;
+        font-size: 18px;
+        text-decoration: none;
+    }
 }
 
 
