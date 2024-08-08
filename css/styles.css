@@ -383,13 +383,59 @@ footer{
 /********** NOSOTROS *********/
 .sect-nosotros{
     margin-top: 85px;
+    height: 100%;
 }
+.container-divs{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    
+}
+.container-divs > div{
+    height: 200px;
+    width: 600px;
+    background-color: #4D8076;
+    border-radius: 10px;
+    p{
+        padding: 10px;
+    }
+    h2{
+        text-align: center;
+    }
+
+}
+
 #ul_4{
     border-radius: 10px;
     padding: 3px;
     background-color: rgba(240, 248, 255, 0.336);
 }
-
+@media screen and (max-width:790px){
+    .container-divs > div{
+        width: auto;
+        height: 200px;
+        overflow: auto;
+    }
+    footer{
+        .titulo{
+            height: 45px;
+            padding: 0px;
+            h3{
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media screen and (max-width:425px){
+    .container-divs > div{
+        width: auto;
+        font-size: 15px;
+        overflow: auto;
+    }
+}
 /********** CONTACTO *********/
 .sect_contacto{
     margin-top: 85px;
