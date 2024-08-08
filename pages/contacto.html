@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header> <!-- ENCABEZADO -->
+    <header style="z-index: 3;"> <!-- ENCABEZADO -->
         <div class="container-head">
             <div class="imagen-logo">
                 <a href="../index.html"><img src="../img/logo.png" alt="Imagen-Logo"></a>
@@ -35,32 +35,35 @@
 
     
         <main> <!-- CUERPO DE PAGINA -->
-            <div class="container">
-                <form style="margin-top: 100px;">
+            <div class="formulario">
+                <form>
                     <div class="row g-2">
                         <div class="col-md">
                           <div class="form-floating">
-                            <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
-                            <label for="floatingInputGrid">Email address</label>
+                            <input type="email" class="form-control" style="position: absolute;" id="floatingInputGrid" placeholder="nombre@ejemplo.com" value="nombre@ejemplo.com">
+                            <label style="position: relative; top: 0px; width: 200px; background-color: rgba(240, 248, 255, 0);">Email</label>
                           </div>
                         </div>
                         <div class="col-md">
-                          <div class="form-floating">
-                            <select class="form-select" id="floatingSelectGrid">
-                              <option selected>Open this select menu</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                            <label for="floatingSelectGrid">Works with selects</label>
+                          <div class="form-floating" style="height: 100px; width: 600px;">
+                            <div class="input-group" style="height: 58px;">
+                                <span class="input-group-text">Nombre y apellido</span>
+                                <input type="text" aria-label="First name" class="form-control">
+                                <input type="text" aria-label="Last name" class="form-control">
+                              </div>
                           </div>
                         </div>
-                      </div>
+                    </div>
+
                     <div class="form-floating">
                         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                        <label for="floatingTextarea2">Comments</label>
+                        <label for="floatingTextarea2">Ingrese el mensaje...</label>
                       </div>
                 </form>
+            </div>
+
+            <div class="iframe-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4736.081310496168!2d-60.66977207047467!3d-32.92683834958166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b654abc3ab1d5f%3A0x2f90ce97db2c5a6!2sAlto%20Rosario%20Shopping.!5e0!3m2!1ses-419!2sar!4v1723079628433!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </main>
 

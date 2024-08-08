@@ -68,7 +68,12 @@ main{
     width: 80%;
     margin: auto;
     border-radius: 25px;
-    background-color: #2f564dcd   ;
+    background-color: #2f564dcd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 .cuerpo-pag{
@@ -119,6 +124,10 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+
+.formulario{
 
 }
 /* FOOTER */
