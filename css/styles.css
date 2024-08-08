@@ -435,6 +435,15 @@ footer{
         font-size: 15px;
         overflow: auto;
     }
+    footer{
+        .titulo{
+            h3{
+                text-align: center;
+                font-size: 13px;
+                padding: 0px;
+            }
+        }
+    }
 }
 /********** CONTACTO *********/
 .sect_contacto{
